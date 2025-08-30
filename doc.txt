@@ -1,0 +1,26 @@
+# Документация по VA-API Linux:
+# https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/gpu/vaapi.md
+
+
+# Проверить все флаги Chromium:
+# 1: https://source.chromium.org/chromium/chromium/src/+/main:tools/metrics/histograms/enums.xml
+# 2: https://source.chromium.org/chromium/chromium/src/+/main:third_party/crossbench-web-tests/third_party/crossbench/crossbench/flags/known_chrome_flags.py
+# 3: https://source.chromium.org/chromium/chromium/src/+/main:third_party/crossbench-web-tests/third_party/crossbench/crossbench/flags/known_js_flags.py
+# 4: https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_switches.cc
+# 5: https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/flag_descriptions.cc
+# 6: https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/about_flags.cc
+# 7: https://source.chromium.org/chromium/chromium/src/+/main:third_party/angle/testing/variations/fieldtrial_testing_config.json
+
+
+# Флаги Skia:
+# --enable-features=UIEnableSharedImageCacheForGpu,RustyPng
+
+
+# DrDc. Direct Rendering Display Compositor в данный момент работает только на Android и частично на MacOS:
+# https://source.chromium.org/search?q=EnableDrDc&ss=chromium%2Fchromium%2Fsrc 
+#--enable-features=EnableDrDc
+
+
+# Флаги Wayland которые включены по умолчанию:
+# Можно проверить тут: https://source.chromium.org/chromium/chromium/src/+/main:ui/base/ui_base_features.cc
+# --enable-features=WaylandLinuxDrmSyncobj,WaylandPerSurfaceScale,WaylandTextInputV3
