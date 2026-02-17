@@ -81,3 +81,21 @@ Additional useful options:
     --disable-gpu-sandbox: To disable Chromium's sandboxing features, if it's getting in the way of testing.
     --disable-gpu-compositing: To make sure only the WebGL test being debugged is run through ANGLE, not the entirety of Chromium.
 ###############################################################################################
+
+
+###############################################################################################
+Включение Vulkan
+###############################################################################################
+  def SetExtraBrowserOptionsWithBrowser(self, options, possible_browser):
+    # Make sure WebGPU is enabled if possible, even if not shipped.
+    # The test itself ensures it won't use a fallback (software) backend.
+    options.AppendExtraBrowserArgs(['--enable-unsafe-webgpu'])
+
+    if possible_browser.platform.GetOSName() == 'linux':
+      # Flags to make sure Chromium is in the correct mode to run WebGPU.
+      # testing the backend we get by default. Or, if needed, test both.
+      options.AppendExtraBrowserArgs([
+          '--enable-features=Vulkan,VulkanFromANGLE',
+          '--use-angle=vulkan',
+          '--ozone-platform=x11',
+###############################################################################################
