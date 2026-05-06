@@ -1,6 +1,7 @@
 # Документация по VA-API Linux:
 # https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/gpu/vaapi.md
 
+# Группые политики Brave
 https://github.com/brave/brave-core/tree/512c53c2e6f7104bce88f9563f439a8eb6032f01/components/policy/resources/templates/policy_definitions/BraveSoftware
 
 
