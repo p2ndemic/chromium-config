@@ -114,7 +114,6 @@ Additional useful options:
 ###############################################################################################
 --use-cmd-decoder=passthrough --use-gl=angle --use-angle=gl
 
-Дополнительные полезные опции
+Список эксперементальных функций: [--enable-experimental-web-platform-features]
 ###############################################################################################
---disable-domain-reliability
---no-default-browser-check
+https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/platform/runtime_enabled_features.json5
