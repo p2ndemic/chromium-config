@@ -112,3 +112,8 @@ Additional useful options:
 Включение OpenGL
 ###############################################################################################
 --use-cmd-decoder=passthrough --use-gl=angle --use-angle=gl
+
+Дополнительные полезные опции
+###############################################################################################
+--disable-domain-reliability
+--no-default-browser-check
