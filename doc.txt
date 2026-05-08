@@ -4,6 +4,7 @@
 # Группые политики Brave
 https://github.com/brave/brave-core/tree/512c53c2e6f7104bce88f9563f439a8eb6032f01/components/policy/resources/templates/policy_definitions/BraveSoftware
 https://chromium.googlesource.com/chromium/src/+/cdec4ebe6701dc2a6d4134e223629fe798e3161e/chrome/test/data/policy/policy_test_cases.json
+https://chromeenterprise.google/policies/#GenerativeAI
 
 # Проверить все флаги Chromium:
 # 1: https://source.chromium.org/chromium/chromium/src/+/main:tools/metrics/histograms/enums.xml
